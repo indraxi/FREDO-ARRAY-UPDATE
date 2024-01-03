@@ -1,0 +1,15 @@
+S=0;
+N=int(input("enter number of elements")) ;
+LST=input("enter array elements SEPARATED BY SPACE");
+LST1=LST.split();
+L=sorted(LST1);
+for i in L:
+      S= S + int(i);
+for j in L :
+      if (int(j)*N)>S:
+            X=j;
+            for i in range(0,N):
+                  L[i]=X;
+      else:
+            continue;
+print(X);
